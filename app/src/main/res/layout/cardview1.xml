@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation= "horizontal"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/expand"
+            android:clickable="true"
+            android:src="@drawable/expand"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            />
+        <TextView
+            android:id="@+id/Title"
+            android:text="Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/expand"
+
+            android:layout_toEndOf="@+id/expand" />
+        <ImageView
+            android:id="@+id/icon"
+            android:src="@drawable/frozen"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+             />
+        <RatingBar
+            android:id="@+id/rate"
+            android:layout_marginLeft="5dp"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Title"
+
+
+
+            android:layout_marginTop="5dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/icon"
+            android:textSize="12sp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:text="hhheeeyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+            android:maxLines="2"
+            android:layout_below="@+id/rate"
+            android:layout_toRightOf="@id/expand"
+       />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

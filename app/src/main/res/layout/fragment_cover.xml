@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:id="@+id/fragcover" android:layout_height="match_parent"
+    android:background="@drawable/backgrd"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:text=" Navigation View Demonstration"
+        android:textSize="20dp"
+        android:textColor="@color/navy"
+        android:textColorHighlight="@color/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/T2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduction to ToolBar and Action Bar"
+        android:textStyle="italic"
+
+        android:textColor="@color/navy"
+
+        android:layout_below="@+id/Heading"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+
+</RelativeLayout>

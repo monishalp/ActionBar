@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgrd">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/navy"
+        android:text="Title"
+        android:textStyle="italic|bold" />
+
+    <ImageView
+        android:id="@+id/MoviePic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar"
+        android:layout_below="@+id/title"
+         />
+        <TextView
+            android:id="@+id/Hactors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Actors: "
+            android:textColor="@color/navy"
+            android:textStyle="italic|bold"
+            android:layout_alignTop="@+id/MoviePic"
+
+            android:layout_toEndOf="@+id/MoviePic" />
+    <TextView
+
+        android:id="@+id/actors"
+        android:text="Hactors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Hactors"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/MoviePic"
+        android:textStyle="italic|bold"
+
+
+        />
+        <TextView
+            android:text="Directors: "
+            android:textColor="@color/navy"
+            android:id="@+id/Hdirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/actors"
+            android:layout_alignStart="@+id/Hactors"
+            android:textStyle="italic|bold"/>
+    <TextView
+        android:id="@+id/director"
+        android:text="HDire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:layout_alignTop="@+id/Hdirector"
+        android:layout_toEndOf="@+id/Hdirector" />
+<TextView
+    android:text="Year: "
+    android:id="@+id/Hyear"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/navy"
+    android:textStyle="italic|bold"
+    android:layout_alignTop="@+id/year"
+    android:layout_alignStart="@+id/Hdirector" />
+
+    <TextView
+        android:id="@+id/year"
+        android:text="Hyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic|bold"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/Hdirector"
+        android:layout_toEndOf="@+id/Hyear" />
+
+    <RatingBar
+        android:id="@+id/rate"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/MoviePic"
+
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1" />
+<TextView
+    android:id="@+id/Hdesp"
+    android:text="Movie Info"
+    android:textColor="@color/navy"
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@id/rate"/>
+    <TextView
+        android:id="@+id/desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+
+        android:layout_below="@id/Hdesp" />
+</RelativeLayout>

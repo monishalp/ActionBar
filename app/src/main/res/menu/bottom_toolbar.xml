@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:title="rate_t"
+        android:icon="@drawable/rate_t"
+        android:id="@+id/rate_t"
+        app:showAsAction="ifRoom|withText">
+    </item>
+    <item
+        android:title="rate_v"
+        android:id="@+id/rate_v"
+        android:icon="@drawable/rate_v"
+        app:showAsAction="ifRoom|withText">
+    </item>
+</menu>
